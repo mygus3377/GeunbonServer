@@ -1,7 +1,7 @@
 {
   "public": true,
   "lostcity": {
-    "description": "근본서버: 도시는 넓은 단(최대 3단, 6블록 차이), 이어지는 도로·고속도로, 폐허 약하게",
+    "description": "근본서버: 도시는 넓은 단(76/82, 6블록 차이 — 큰길은 반 블록 경사로로 이어짐), 이어지는 도로·고속도로, 폐허 약하게, 미국풍 건물(geunbon 월드 스타일)",
     "streetGenerationMode": "HIERARCHICAL_GRID_V1",
     "buildingChance": 0.45,
     "parkChance": 0.05,
@@ -14,7 +14,8 @@
     "randomLeafBlockChance": 0.03,
     "highwayRequiresTwoCities": false,
     "highwayLevelFromCities": 3,
-    "useAvgHeightmap": true
+    "useAvgHeightmap": true,
+    "worldStyle": "geunbon:geunbon"
   },
   "cities": {
     "cityChance": 0.03,
@@ -23,7 +24,7 @@
     "cityMinHeight": 55,
     "cityMaxHeight": 100,
     "cityLevel0Height": 76,
-    "cityLevel1Height": 86,
+    "cityLevel1Height": 82,
     "cityLevel2Height": 384,
     "cityLevel3Height": 384,
     "cityLevel4Height": 384,
