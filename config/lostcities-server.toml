@@ -1,4 +1,4 @@
-# 근본서버: 새 월드를 만들면 Lost Cities가 자동으로 켜지게 한다 (월드 생성 화면에서 따로 설정할 필요 없음)
+# 근본서버: 새 월드를 만들면 Lost Cities 근본서버 프로필이 자동으로 켜진다 (프로필 파일: config/lostcities/profiles/geunbon.json)
 [profiles]
-	selectedProfile = "default"
+	selectedProfile = "geunbon"
 	selectedCustomJson = ""

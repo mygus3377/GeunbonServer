@@ -1,34 +1,38 @@
 {
   "public": true,
   "lostcity": {
-    "description": "근본서버: 빽빽한 도심, 평평한 도로망, 고속도로 많음, 폐허 강함",
+    "description": "근본서버: 도시는 넓은 단(최대 3단, 6블록 차이), 이어지는 도로·고속도로, 폐허 약하게",
     "streetGenerationMode": "HIERARCHICAL_GRID_V1",
     "buildingChance": 0.45,
-    "parkChance": 0.06,
+    "parkChance": 0.05,
     "fountainChance": 0.02,
-    "ruinChance": 0.4,
-    "ruinMinlevelPercent": 0.25,
-    "ruinMaxlevelPercent": 0.85,
-    "rubbleLayer": true,
-    "vineChance": 0.03,
-    "randomLeafBlockChance": 0.2,
+    "ruinChance": 0.12,
+    "ruinMinlevelPercent": 0.5,
+    "ruinMaxlevelPercent": 0.95,
+    "rubbleLayer": false,
+    "vineChance": 0.02,
+    "randomLeafBlockChance": 0.03,
     "highwayRequiresTwoCities": false,
-    "highwayDistanceMask": 15,
-    "highwayMainPerlinScale": 90.0
+    "highwayLevelFromCities": 3,
+    "useAvgHeightmap": true
   },
   "cities": {
-    "cityChance": 0.02,
-    "cityLevel0Height": 72,
-    "cityLevel1Height": 72,
-    "cityLevel2Height": 72,
-    "cityLevel3Height": 72,
-    "cityLevel4Height": 72,
-    "cityLevel5Height": 72,
-    "cityLevel6Height": 72,
-    "cityLevel7Height": 72
+    "cityChance": 0.03,
+    "cityMinRadius": 90,
+    "cityMaxRadius": 220,
+    "cityMinHeight": 55,
+    "cityMaxHeight": 100,
+    "cityLevel0Height": 76,
+    "cityLevel1Height": 86,
+    "cityLevel2Height": 384,
+    "cityLevel3Height": 384,
+    "cityLevel4Height": 384,
+    "cityLevel5Height": 384,
+    "cityLevel6Height": 384,
+    "cityLevel7Height": 384
   },
   "explosions": {
-    "explosionChance": 0.006,
-    "miniExplosionChance": 0.08
+    "explosionChance": 0.0008,
+    "miniExplosionChance": 0.012
   }
 }

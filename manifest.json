@@ -11,7 +11,7 @@
     },
     {
       "name": "geunbon-0.1.0.jar",
-      "sha256": "718f19079e43c3717b31e742715003a06d86470a2ee64fbcb19a45b13ef764bf"
+      "sha256": "fd22db02ed5f167a0fa2fd25dac203ebed3dc589988d9fea3e21264d0abf6cad"
     },
     {
       "name": "open-parties-and-claims-neoforge-1.21.1-0.33.0.jar",
@@ -29,7 +29,7 @@
   "configs": [
     {
       "path": "config/lostcities-server.toml",
-      "sha256": "955c274eddf9e86d74b9d2bb71b3931062622a58db221cb669a900f439c83bc6"
+      "sha256": "af65d21afcebc2d1341df74cc99648891f91aac9dd577b4d0de465ebc2c91295"
     }
   ]
 }
