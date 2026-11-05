@@ -1,0 +1,4 @@
+# 근본서버: 새 월드를 만들면 Lost Cities가 자동으로 켜지게 한다 (월드 생성 화면에서 따로 설정할 필요 없음)
+[profiles]
+	selectedProfile = "default"
+	selectedCustomJson = ""

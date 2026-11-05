@@ -11,7 +11,7 @@
     },
     {
       "name": "geunbon-0.1.0.jar",
-      "sha256": "80b62f6b22cd75c9a0dcd3b91ee5f62165257fa6e2edfedb56184d4d4a315b3e"
+      "sha256": "09c4a6262828a1c146a1c89d9aeede3549137aca49dfa8b6c79950b16444a829"
     },
     {
       "name": "open-parties-and-claims-neoforge-1.21.1-0.33.0.jar",
@@ -24,6 +24,12 @@
     {
       "name": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
       "sha256": "6a42b6f01bd96b496e5fcc07d4541bad1a699d9ec8ad58ad40d5dcfe23a7d4c7"
+    }
+  ],
+  "configs": [
+    {
+      "path": "config/lostcities-server.toml",
+      "sha256": "955c274eddf9e86d74b9d2bb71b3931062622a58db221cb669a900f439c83bc6"
     }
   ]
 }
