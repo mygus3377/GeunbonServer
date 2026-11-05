@@ -1,0 +1,34 @@
+{
+  "public": true,
+  "lostcity": {
+    "description": "근본서버: 빽빽한 도심, 평평한 도로망, 고속도로 많음, 폐허 강함",
+    "streetGenerationMode": "HIERARCHICAL_GRID_V1",
+    "buildingChance": 0.45,
+    "parkChance": 0.06,
+    "fountainChance": 0.02,
+    "ruinChance": 0.4,
+    "ruinMinlevelPercent": 0.25,
+    "ruinMaxlevelPercent": 0.85,
+    "rubbleLayer": true,
+    "vineChance": 0.03,
+    "randomLeafBlockChance": 0.2,
+    "highwayRequiresTwoCities": false,
+    "highwayDistanceMask": 15,
+    "highwayMainPerlinScale": 90.0
+  },
+  "cities": {
+    "cityChance": 0.02,
+    "cityLevel0Height": 72,
+    "cityLevel1Height": 72,
+    "cityLevel2Height": 72,
+    "cityLevel3Height": 72,
+    "cityLevel4Height": 72,
+    "cityLevel5Height": 72,
+    "cityLevel6Height": 72,
+    "cityLevel7Height": 72
+  },
+  "explosions": {
+    "explosionChance": 0.006,
+    "miniExplosionChance": 0.08
+  }
+}
