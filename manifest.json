@@ -1,1 +1,17 @@
-{"version": "0.0.1", "server_ip": "", "server_port": 25565, "gdrive_file_id": "", "launcher_version": "1.0.4", "mods": []}
+{
+  "version": "0.0.1",
+  "server_ip": "",
+  "server_port": 25565,
+  "gdrive_file_id": "",
+  "launcher_version": "1.0.4",
+  "mods": [
+    {
+      "name": "geckolib-neoforge-1.21.1-4.8.4.jar",
+      "sha256": "a1b6ce25e8627aa7e748672eedb6b71af68e0993462313649c259f38e42bcac9"
+    },
+    {
+      "name": "geunbon-0.1.0.jar",
+      "sha256": "ec82601e9dd5c371e0ff7ad2780270b8a8774fa2ea4430e513580e91226cac6e"
+    }
+  ]
+}
