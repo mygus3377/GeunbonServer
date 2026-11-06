@@ -11,7 +11,7 @@
     },
     {
       "name": "geunbon-0.1.0.jar",
-      "sha256": "0051448d66f50d1d0b9d8882892a026a8f756a25a618c44b56b97eae79517fae"
+      "sha256": "3860662473f2eeb0b281dd372d02048b983ace85579219293f71bbcf185b1c0d"
     },
     {
       "name": "open-parties-and-claims-neoforge-1.21.1-0.33.0.jar",
@@ -33,7 +33,7 @@
     },
     {
       "path": "shaderpacks/GeunbonShaders.zip",
-      "sha256": "3aaf6688fabc53b0f5b64dd4c7b1aa37bddbcca53adfd2e82de0f08ac6904aea"
+      "sha256": "8aa6ebab7066317bde6ce61f814544d4998b8532115a373c5e42bba8ecf6d7b6"
     }
   ]
 }
