@@ -6,12 +6,16 @@
   "launcher_version": "1.0.4",
   "mods": [
     {
+      "name": "FarmersDelight-1.21.1-1.3.4.jar",
+      "sha256": "139ad7696462c89c03eea463f805abffa552526c5dadaadae221dd9624cb197c"
+    },
+    {
       "name": "geckolib-neoforge-1.21.1-4.8.4.jar",
       "sha256": "a1b6ce25e8627aa7e748672eedb6b71af68e0993462313649c259f38e42bcac9"
     },
     {
       "name": "geunbon-0.1.0.jar",
-      "sha256": "b7815463a25ed43cf418307664b884759a63fa0b9fc609bf79ec3da84489cfab"
+      "sha256": "b9fb62c217dbf798905ab9fe4aa9c7772162c8b2beb021e55aa685d3c9516a20"
     },
     {
       "name": "open-parties-and-claims-neoforge-1.21.1-0.33.0.jar",
