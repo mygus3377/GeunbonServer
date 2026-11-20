@@ -1,0 +1,6 @@
+# 근본서버: Rustic Delight 설정 (런처가 config/ 에 덮어씀, 서버 config/ 에도 같은 파일)
+# 빠진 항목은 게임이 기본값으로 채움
+# 구조물 상자에 Rustic 아이템 끼워 넣기 끔 — 루팅은 우리 표(geunbon:chests/*)가 관리
+generate_random_loot = false
+# 마을 밭에 Rustic 작물 끔
+generate_village_farm_crops = false
