@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>근본서버 · 생존자 단말기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Special+Elite&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 배경: 붉은 하늘 + 무너진 스카이라인 + 안개 + 필름 그레인 -->
+    <div class="bg-sky"></div>
+    <svg class="bg-city" viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true">
+        <path class="far" d="M0 220V150h30v-20h18v30h22V110h14v-12h10v12h16v60h20v-40h26v-30l8-6 8 6v70h24V90h12l4-14 4 14h12v80h30v-50h22v50h18V60h8v-8h12v8h8v110h26v-30h34v30h20V100h30v70h16v-36l10-10 10 10v36h28V80h10v-18h6v18h12v90h24v-44h30v44h20V120h18v-20h20v70h26V96h40v74h22v-52h14l6-10 6 10v52h30V70h12v-14h8v14h12v100h24v-34h30v34h20v-60h26v60h40V220z"/>
+        <path class="near" d="M0 220v-36h40v-30h22v20h30v-48h18l6 8v70h30v-22h40v-40h12v-10h14v62h30v-30l20-18v48h34v-70h16l4-10 4 10h8v70h40v-26h30v26h22v-60h10v-6h18v66h36v-38h24l10 14v24h40v-82h30v82h22v-44h20v44h40v-30h30v30h24v-58h12v-12h14v70h34v-26h26v26h30v-46h20v46h40V220z"/>
+    </svg>
+    <div class="bg-fog"></div>
+    <div class="grain"></div>
+
+    <!-- 타이틀 바 -->
+    <div class="title-bar">
+        <div class="hazard-tab"></div>
+        <div class="logo-title">SURVIVOR TERMINAL <span>// 근본서버 v1</span></div>
+        <div class="window-controls">
+            <button id="btn-minimize" title="최소화">─</button>
+            <button id="btn-close" onclick="window.close()" title="닫기">✕</button>
+        </div>
+    </div>
+
+    <div class="launcher-container">
+        <!-- 좌측 -->
+        <aside class="sidebar">
+            <div class="server-logo">
+                <div class="logo-stamp">QUARANTINE ZONE</div>
+                <h1>근본서버</h1>
+                <p>THE CITY IS DEAD. YOU ARE NOT.</p>
+            </div>
+
+            <!-- 생존자 인식표 -->
+            <div class="profile-card">
+                <div class="tag-hole"></div>
+                <div class="user-avatar" id="avatar">?</div>
+                <div class="user-info">
+                    <div class="tag-label">SURVIVOR ID</div>
+                    <div class="username" id="username">미확인 생존자</div>
+                    <div class="status-badge" id="status-badge">로그인 필요</div>
+                </div>
+            </div>
+
+            <div class="settings-group">
+                <label for="ram-select">배낭 용량 · 할당 메모리</label>
+                <select id="ram-select">
+                    <option value="8G" selected>8 GB · 권장</option>
+                    <option value="10G">10 GB · 넉넉하게</option>
+                    <option value="12G">12 GB · 고사양</option>
+                    <option value="6G">6 GB · 저사양</option>
+                    <option value="4G">4 GB · 최소</option>
+                </select>
+            </div>
+
+            <div class="sidebar-spacer"></div>
+            <button id="btn-login" class="neon-btn login-btn">MICROSOFT 로그인</button>
+            <button id="btn-logout" class="neon-btn logout-btn" style="display: none;">로그아웃</button>
+        </aside>
+
+        <!-- 우측 -->
+        <main class="main-content">
+            <div class="panel-header">
+                <div class="panel-title-group">
+                    <span class="broadcast-title"><i class="rec"></i>비상 방송 수신 중</span>
+                    <div class="server-status-indicator" id="server-status-container">
+                        <span class="status-dot offline" id="server-status-dot"></span>
+                        <span class="status-text offline" id="server-status-text">신호 탐색 중...</span>
+                    </div>
+                </div>
+                <div class="utility-toolbar">
+                    <button id="btn-util-patch" class="util-btn" title="전체 방송 기록">방송 기록</button>
+                    <button id="btn-util-refresh" class="util-btn" title="다시 수신">재수신</button>
+                    <button id="btn-util-folder" class="util-btn" title="게임 폴더 열기">폴더</button>
+                    <button id="btn-util-crash" class="util-btn" title="크래시 보고서">크래시</button>
+                    <button id="btn-util-log" class="util-btn" title="최신 로그">로그</button>
+                    <button id="btn-util-backup" class="util-btn" title="세이브 백업 복구">백업</button>
+                    <button id="btn-util-reset" class="util-btn reset-btn" title="런처 완전 초기화">초기화</button>
+                </div>
+            </div>
+
+            <div class="console-frame">
+                <div class="console-box" id="console">
+                    <p class="log-system">&gt;&gt; 주파수 고정. 생존자 네트워크에 연결되었습니다.</p>
+                    <p class="log-info">[안내] 출발 전에 반드시 '보급품 동기화'로 모드를 최신 상태로 맞추세요.</p>
+                    <p class="log-detail">- 소리를 내면 몰려옵니다. 총은 마지막 수단입니다.</p>
+                    <p class="log-detail">- 물리면 시간이 없습니다. 혈청은 병원 깊은 곳에 있습니다.</p>
+                </div>
+                <div class="scanlines"></div>
+            </div>
+
+            <div class="action-footer">
+                <div class="progress-container">
+                    <div class="progress-text" id="progress-text">대기 중 · 로그인 후 보급품을 동기화하세요.</div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button id="btn-sync" class="neon-btn sync-btn" disabled>보급품 동기화</button>
+                    <button id="btn-launch" class="neon-btn launch-btn" disabled>출발</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 로그 뷰어 -->
+    <div id="log-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>현장 기록 · latest.log</span>
+                <div class="modal-header-actions">
+                    <button id="btn-modal-copy" class="modal-btn">복사</button>
+                    <button id="btn-modal-close" class="modal-btn close-btn">✕</button>
+                </div>
+            </div>
+            <div class="modal-body"><pre id="modal-log-content">기록을 불러오는 중...</pre></div>
+        </div>
+    </div>
+
+    <!-- 방송 기록 -->
+    <div id="patch-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>비상 방송 전체 기록</span>
+                <div class="modal-header-actions">
+                    <button id="btn-patch-close" class="modal-btn close-btn">✕</button>
+                </div>
+            </div>
+            <div class="modal-body" style="user-select: text;">
+                <div id="modal-patch-content" class="patch-details-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 백업 -->
+    <div id="backup-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>세이브 백업 · 복구</span>
+                <div class="modal-header-actions">
+                    <button id="btn-backup-close" class="modal-btn close-btn">✕</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-note">시점을 고르면 세이브와 미니맵 데이터가 그때로 돌아갑니다. 복구 직전 상태도 따로 백업됩니다.</p>
+                <div id="backup-list-container" class="backup-list-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

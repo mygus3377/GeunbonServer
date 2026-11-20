@@ -3,7 +3,7 @@
   "server_ip": "",
   "server_port": 25565,
   "gdrive_file_id": "",
-  "launcher_version": "1.0.4",
+  "launcher_version": "1.1.0",
   "mods": [
     {
       "name": "FarmersDelight-1.21.1-1.3.4.jar",
@@ -15,7 +15,7 @@
     },
     {
       "name": "geunbon-0.1.0.jar",
-      "sha256": "f2f1cb153ed8a55c3aabcc7904abd96df906d4de428d6da98a83f092e0728bc8"
+      "sha256": "1f8388946a71edcb3115be027a359a97b7006fb877644233be9fefd37e9d976f"
     },
     {
       "name": "open-parties-and-claims-neoforge-1.21.1-0.33.0.jar",
@@ -32,12 +32,70 @@
   ],
   "configs": [
     {
+      "path": "config/entityculling.json",
+      "sha256": "b9ea520cbc43d1ef27605c9052c19fe5a0d5e2a38de9bfa030365a59df00c873"
+    },
+    {
       "path": "config/lostcities-server.toml",
       "sha256": "af65d21afcebc2d1341df74cc99648891f91aac9dd577b4d0de465ebc2c91295"
     },
     {
       "path": "shaderpacks/GeunbonShaders.zip",
       "sha256": "8aa6ebab7066317bde6ce61f814544d4998b8532115a373c5e42bba8ecf6d7b6"
+    }
+  ],
+  "launcher_files": [
+    {
+      "path": "main.js",
+      "sha256": "02fad71bc10422bf4bbe2494c2ccac0fe3491c97e8515b6f82bfe9e2ca877b70"
+    },
+    {
+      "path": "self_update.js",
+      "sha256": "4f5c7c0759354ed233f3b856511a2a6b7aa9d964c76866140ed2d2171c14250a"
+    },
+    {
+      "path": "preload.js",
+      "sha256": "9e76c9befccb5d0322c27ef5c4560473b141c18b1785b4b5e67760dc8dab61b4"
+    },
+    {
+      "path": "renderer.js",
+      "sha256": "72cfa04abe5e3603b306056ba3ee47f48fdd0977803b2f2aa8454a6be1583008"
+    },
+    {
+      "path": "github_sync.js",
+      "sha256": "2a1bdd719a8ba99bff2aca96b4e9181307fd49f0ca7930c42f915f4ecb8d7d4b"
+    },
+    {
+      "path": "config.js",
+      "sha256": "8575984efc852bccea52e22f8b7b191f2a8bd594fd4c0cdbc3cacb6ca737e70e"
+    },
+    {
+      "path": "resourcepacks.js",
+      "sha256": "7834a4db74d7f5123f764692310ae828ce8852726df115d05a9b38c05523fea9"
+    },
+    {
+      "path": "extras.js",
+      "sha256": "d885ce9713d42c7d7f48476dd39694db554828fc26655bac0172ced7c7ddcc23"
+    },
+    {
+      "path": "gdrive_sync.js",
+      "sha256": "d77531dca34ea1f82ecdcb510565b2445e2b3c744d69ea9be5e3efb1eb2366dd"
+    },
+    {
+      "path": "index.html",
+      "sha256": "3c3f12d4329e1aba59e5f6c12669a6f15fcc216675b2322479b5149e4a86adeb"
+    },
+    {
+      "path": "style.css",
+      "sha256": "3e91c49c96e1da3349a574cc46b59f5953fb260ba8ae54f1dbf8bf5b435f346e"
+    },
+    {
+      "path": "icon.png",
+      "sha256": "3c54ce8676d071f7b67c1e2acc7854892d8108ef268558d780a2d4a3d4f8436e"
+    },
+    {
+      "path": "package.json",
+      "sha256": "eeef9425db486fe552c034541a693b1c1b118de186aa2f28beb0df26440df0f8"
     }
   ]
 }

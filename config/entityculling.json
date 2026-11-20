@@ -1,0 +1,14 @@
+{
+  "entityWhitelist": [
+    "mts:builder_existing",
+    "mts:builder_rendering",
+    "mts:builder_seat"
+  ],
+  "tickCullingWhitelist": [
+    "minecraft:firework_rocket",
+    "minecraft:boat",
+    "mts:builder_existing",
+    "mts:builder_rendering",
+    "mts:builder_seat"
+  ]
+}
